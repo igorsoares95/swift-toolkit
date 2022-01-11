@@ -2529,6 +2529,7 @@ function scrollToOffset(offset) {
 
 function snapOffset(offset) {
   var value = offset + 1;
+  orientationChanged();
   return value - value % maxScreenX;
 }
 
